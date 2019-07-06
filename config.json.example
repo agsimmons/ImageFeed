@@ -1,0 +1,7 @@
+{
+    "host": "0.0.0.0",
+    "port": 8081,
+    "refresh_interval": 0.25,
+    "video_capture_index": 0,
+    "temp_file": "/tmp/image_feed_stream.png"
+}
