@@ -9,7 +9,7 @@ from imagefeed import ROOT_PATH, feed_manager
 
 app = Flask(__name__)
 
-with open(ROOT_PATH / 'config.json') as f:
+with open(str(ROOT_PATH / 'config.json')) as f:
     CONFIG = json.load(f)
 
 
