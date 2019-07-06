@@ -4,7 +4,7 @@ from pathlib import Path
 
 from flask import Flask, send_file
 
-import feed_manager
+from imagefeed import feed_manager
 
 
 ROOT_PATH = Path(__file__).parent.parent
