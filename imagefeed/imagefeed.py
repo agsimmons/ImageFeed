@@ -4,10 +4,8 @@ from pathlib import Path
 
 from flask import Flask, send_file
 
-from imagefeed import feed_manager
+from imagefeed import ROOT_PATH, feed_manager
 
-
-ROOT_PATH = Path(__file__).parent.parent
 
 app = Flask(__name__)
 
@@ -33,7 +31,3 @@ def main():
     process.start()
 
     app.run(host=CONFIG['host'], port=CONFIG['port'])
-
-
-if __name__ == '__main__':
-    main()
