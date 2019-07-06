@@ -9,7 +9,7 @@ def capture(refresh_interval, video_capture_index, temp_file):
     cap = cv2.VideoCapture(video_capture_index)
 
     if cap is None or not cap.isOpened():
-        print(f'ERROR: VideoCapture with index {video_capture_index} does not exist')
+        print('ERROR: VideoCapture with index {} does not exist'.format(video_capture_index))
         sys.exit(1)
 
     try:
